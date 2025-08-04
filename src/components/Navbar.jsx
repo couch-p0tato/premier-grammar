@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { useEffect } from 'react'
