@@ -1,6 +1,7 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { assets } from '../assets/assets'
+import { useEffect } from 'react'
 
 const Navbar = () => {
     const [open, setOpen] = React.useState(false)
@@ -8,6 +9,17 @@ const Navbar = () => {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+        const el = document.querySelector(location.hash);
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
+        }
+    }, [location]);
 
 
     return (
@@ -22,11 +34,11 @@ const Navbar = () => {
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-8 text-color-dark">
                 <NavLink to="/"  className="under-style" onClick={scrollToTop}>Home</NavLink>
-                <a href="/#about" className="under-style">About Us</a>
+                <NavLink to="/#about" className="under-style">About Us</NavLink>
                 <NavLink to="/gallery" className="under-style" onClick={scrollToTop}>Gallery</NavLink>
                 <NavLink to="/events" className="under-style" onClick={scrollToTop}>Events</NavLink>
                 <NavLink to="/contact" className="under-style" onClick={scrollToTop}>Contact Us</NavLink>
-                <a href="/#testimonials" className="under-style">Testimonials</a>
+                <NavLink to="/#testimonials" className="under-style">Testimonials</NavLink>
             </div>
 
             {/* Mobile Menu */}
@@ -42,11 +54,11 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div className={`${open ? 'flex' : 'hidden'} absolute top-[55px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 md:px-8 text-sm lg:hidden`}>
                 <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
-                <a href="/#about" onClick={() => setOpen(false)}>About Us</a>
+                <NavLink to="/#about" onClick={() => setOpen(false)}>About Us</NavLink>
                 <NavLink to="/gallery" onClick={() => setOpen(false)}>Gallery</NavLink>
                 <NavLink to="/events" onClick={() => setOpen(false)}>Events</NavLink>
                 <NavLink to="/contact" onClick={() => setOpen(false)}>Contact Us</NavLink>
-                <a to="/#testimonials" onClick={() => setOpen(false)}>Admission</a>
+                <NavLink to="/#testimonials" onClick={() => setOpen(false)}>Admission</NavLink>
             </div>
 
         </nav>
