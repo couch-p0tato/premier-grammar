@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: transform 0.4s ease-in-out;
+}
+
+:root {
+  --primary-blue: #0053A4;
+  --accent-blue: 	#B0D5F7;
+  --accent-navy: 	#00254D;
+  --accent-gray: 	#F5F5F5;
+
+  --minor-bg: #F9FAFB;
+  --bg-two: #EFF6FF;
+
+  /* Text */
+  --text-color-dark: #1E293B;
+  --text-color-light: #FFFFFF;
+  --text-color-blue: #bfdbfe;
+  --text-color-blue-dark: #61B9F2;
+  --text-color-hover: #1E40AF;
+
+  /* Font */
+  --main-font: "Inter", sans-serif;
+}
+
+.text-color-dark {
+  color: var(--text-color-dark);
+}
+
+.text-color-light {
+  color: var(--text-color-light);
+}
+
+.text-color-blue {
+  color: var(--text-color-blue);
+}
+
+.text-color-blue-dark {
+  color: var(--text-color-blue-dark);
+}
+
+.vis-bg {
+  background-color: var(--text-color-dark);
+}
+
+.minor-bg {
+  background-color: var(--minor-bg);
+}
+
+.bg-two {
+  background-color: var(--bg-two);
+}
+
+.footer-bg {
+  background-color: var(--text-color-dark);
+}
+
+.main-font {
+  font-family: var(--main-font);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.gradient-bg,
+.gradient-bg-2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.gradient-bg-2 {
+  height: 60vh;
+}
+
+.gradient-bg:after,
+.gradient-bg-2:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(30, 41, 59, 0.6),  rgba(30, 64, 175, 0.5));
+  z-index: 20;
+}
+
+.gradient-bg-2:after {
+  background: linear-gradient(to right, rgba(30, 41, 59, 0.9),  rgba(30, 64, 175, 0.8));
+}
+
+.under-style::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--text-color-hover);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    margin-top: 5px;
+}
+
+.under-style:hover::after {
+    width: 100%;
+}
+
+/*----------------------- Background Image Section ------------------------*/
+
+.element::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/founder.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  transform: scale(1.05);
+  transition: transform 0.4s ease-in-out;
+  z-index: -10;
+}
+
+.element:hover::before,
+.element-2:hover::before,
+.element-3:hover::before,
+.element-4:hover::before,
+.element-5:hover::before,
+.element-6:hover::before,
+.element-7:hover::before,
+.element-8:hover::before,
+.element-9:hover::before {
+  transform: scale(1);
+}
+
+.element-2::before {
+  /* background-image: url('/nextpolicylab/project-1.jpg'); */
+  background-image: url('/welfare.jpg');
+}
+
+.element-3::before {
+  /* background-image: url('/nextpolicylab/project-1.jpg'); */
+  background-image: url('/presalum.jpg');
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.side-style {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.side-style:hover {
+  transform: translateY(-8px);
+}
+
+/* ------------------------- Testimonial Section ------------------------------ */
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-45%); }
+}
+
+.scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.scroll-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.marquee-inner {
+    animation: marqueeScroll linear infinite;
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* For Debugging */
+
+.test-border-1 {
+  border: 2px solid red;
+}
+
+.test-border-2 {
+  border: 2px solid black;
+}
+
+.test-border-3 {
+  border: 2px solid green;
+}
+
+.test-border-4 {
+  border: 2px solid blue;
+}
