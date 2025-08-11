@@ -38,7 +38,7 @@ const Navbar = () => {
                 <NavLink to="/gallery" className="under-style" onClick={scrollToTop}>Gallery</NavLink>
                 <NavLink to="/events" className="under-style" onClick={scrollToTop}>Events</NavLink>
                 <NavLink to="/contact" className="under-style" onClick={scrollToTop}>Contact Us</NavLink>
-                <NavLink to="/#testimonials" className="under-style">Testimonials</NavLink>
+                <NavLink to="/admission" className="under-style" onClick={scrollToTop}>Admission</NavLink>
             </div>
 
             {/* Mobile Menu */}
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <NavLink to="/gallery" onClick={() => setOpen(false)}>Gallery</NavLink>
                 <NavLink to="/events" onClick={() => setOpen(false)}>Events</NavLink>
                 <NavLink to="/contact" onClick={() => setOpen(false)}>Contact Us</NavLink>
-                <NavLink to="/#testimonials" onClick={() => setOpen(false)}>Admission</NavLink>
+                <NavLink to="/admission" onClick={() => setOpen(false)}>Admission</NavLink>
             </div>
 
         </nav>

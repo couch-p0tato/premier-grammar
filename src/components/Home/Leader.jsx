@@ -31,17 +31,6 @@ const Leader = () => {
                     <p className='text-[#1E40AF] font-semibold'>Founder</p>
                 </div>
             </div>
-
-            <div className='flex flex-col items-center gap-5 pb-5 rounded-xl lg:w-[28%] border border-blue-100 hover:shadow-xl transition-all duration-300 overflow-hidden'>
-                <div className='h-[350px] md:h-[450px] lg:h-[380px] w-full'>
-                    <img src={assets.welfare} alt="Founder Image" className='h-full w-full rounded-t-xl' />
-                </div>
-
-                <div className='flex flex-col items-center text-center text-color-dark gap-2 px-4 lg:w-[90%] md:my-5'>
-                    <h3 className='font-bold text-xl'>Prof. Olufunke R. Vincent</h3>
-                    <p className='text-[#1E40AF] font-semibold lg:w-[50%]'>PREGSOSA Welfare Officer I</p>
-                </div>
-            </div>
             
             <div className='flex flex-col items-center gap-5 pb-5 rounded-xl lg:w-[28%] border border-blue-100 hover:shadow-xl transition-all duration-300 overflow-hidden'>
                 <div className='h-[350px] md:h-[450px] lg:h-[380px] w-full'>
@@ -50,7 +39,18 @@ const Leader = () => {
 
                 <div className='flex flex-col items-center text-center text-color-dark gap-2 px-4 lg:w-[90%] md:my-5'>
                     <h3 className='font-bold text-xl'>Alhaji Kabir Omosanya</h3>
-                    <p className='text-[#1E40AF] font-semibold'>President, PREGSOSA</p>
+                    <p className='text-[#1E40AF] font-semibold'>National President, PREGSOSA</p>
+                </div>
+            </div>
+
+            <div className='flex flex-col items-center gap-5 pb-5 rounded-xl lg:w-[28%] border border-blue-100 hover:shadow-xl transition-all duration-300 overflow-hidden'>
+                <div className='h-[350px] md:h-[450px] lg:h-[380px] w-full'>
+                    <img src={assets.bot_1} alt="Founder Image" className='h-full w-full rounded-t-xl' />
+                </div>
+
+                <div className='flex flex-col items-center text-center text-color-dark gap-2 px-4 lg:w-[90%] md:my-5'>
+                    <h3 className='font-bold text-xl'>Dr. Paul Abiodun</h3>
+                    <p className='text-[#1E40AF] font-semibold lg:w-[50%]'>Chairman BOT, PREGSOSA</p>
                 </div>
             </div>
         </div>

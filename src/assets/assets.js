@@ -15,6 +15,7 @@ import bot_4 from './bot-4.jpg'
 import bot_5 from './bot-5.jpg'
 import bot_6 from './bot-6.jpg'
 import bot_members from './bot-members.jpg'
+import placeholder from './placeholder.png'
 
 
 export const assets = {
@@ -28,7 +29,11 @@ export const assets = {
     welfare,
     admiss,
     icon_1,
-    bot_members
+    bot_members,
+    bot_1,
+    bot_2,
+    bot_3,
+    placeholder,
 }
 
 export const testimonialCards = [
@@ -78,22 +83,22 @@ export const testimonialCards = [
 
 export const galleryData = [
     {
-        img: admiss,
+        img: placeholder,
     },
     {
-        img: admiss,
+        img: placeholder,
     },
     {
-        img: admiss,
+        img: placeholder,
     },
     {
-        img: admiss,
+        img: placeholder,
     },
     {
-        img: admiss,
+        img: placeholder,
     },
     {
-        img: admiss,
+        img: placeholder,
     },
 ]
 
@@ -128,22 +133,22 @@ export const schoolLeaders = [
       caption: "Visionary founder who established the school in 1959",
     },
     {
-      name: "Prof. Olufunke R. Vincent",
-      title: "PREGSOSA Welfare Officer I",
-      image: welfare,
-      caption: "Academic leader who shaped generations of students",
-    },
-    {
       name: "Alhaji Kabir Omosanya",
       title: "President, PREGSOSA",
       image: presalum,
       caption: "Recognized for outstanding contributions to education",
     },
     {
-      name: "Alhaji Kabir Omosanya",
-      title: "President, PREGSOSA",
-      image: icon_1,
+      name: "Dr. Paul Abiodun",
+      title: "Chairman BOT, PREGSOSA",
+      image: bot_1,
       caption: "Recognized for outstanding contributions to education",
+    },
+    {
+      name: "Prof. Olufunke R. Vincent",
+      title: "PREGSOSA Welfare Officer I",
+      image: welfare,
+      caption: "Academic leader who shaped generations of students",
     },
     {
       name: "Alhaji Kabir Omosanya",
@@ -204,55 +209,55 @@ export const memorableEvents = [
     {
       title: "65th Anniversary Celebration",
       category: "Milestone",
-      image: admiss,
+      image: placeholder,
       date: "2024",
     },
     {
       title: "Science Laboratory Commissioning",
       category: "Infrastructure",
-      image: admiss,
+      image: placeholder,
       date: "2023",
     },
     {
       title: "Alumni Homecoming",
       category: "Community",
-      image: admiss,
+      image: placeholder,
       date: "2023",
     },
     {
       title: "Inter-House Sports Competition",
       category: "Sports",
-      image: admiss,
+      image: placeholder,
       date: "2024",
     },
     {
       title: "Academic Excellence Awards",
       category: "Achievement",
-      image: admiss,
+      image: placeholder,
       date: "2024",
     },
     {
       title: "Cultural Day Celebration",
       category: "Culture",
-      image: admiss,
+      image: placeholder,
       date: "2024",
     },
     {
       title: "New Pavilion Opening",
       category: "Infrastructure",
-      image: admiss,
+      image: placeholder,
       date: "2023",
     },
     {
       title: "PREGSOSA Annual Meeting",
       category: "Alumni",
-      image: admiss,
+      image: placeholder,
       date: "2024",
     },
     {
       title: "Graduation Ceremony",
       category: "Academic",
-      image: admiss,
+      image: placeholder,
       date: "2024",
     },
 ]
